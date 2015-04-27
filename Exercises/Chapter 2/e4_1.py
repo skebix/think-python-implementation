@@ -1,7 +1,8 @@
 __author__ = 'skebix'
 
-'''The volume of a sphere with radius r is 4/3 pi r3. What is the volume of a sphere with radius 5?
-Hint: 392.7 is wrong!'''
+'''
+The volume of a sphere with radius r is 4/3 pi r3. What is the volume of a sphere with radius 5? Hint: 392.7 is wrong!
+'''
 
 pi = 3.14
 radius = 5
