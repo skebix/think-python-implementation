@@ -10,6 +10,10 @@ w = TurtleWorld()
 bob = Turtle()
 
 def square(t, length):
+    """
+    Draws a square of the given length with a Turtle t.
+    The turtle returns to its original position.
+    """
     for i in range(4):
         fd(t, length)
         lt(t)

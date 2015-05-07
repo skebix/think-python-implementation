@@ -7,7 +7,6 @@ fraction of a circle to draw. angle is in units of degrees, so when angle=360, a
 
 from swampy.TurtleWorld import *
 from math import pi
-from e3 import polygon
 
 world = TurtleWorld()
 turtle = Turtle()

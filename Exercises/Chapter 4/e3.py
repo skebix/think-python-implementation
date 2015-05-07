@@ -14,6 +14,9 @@ from swampy.TurtleWorld import *
 bob = Turtle()
 
 def polygon(t, sides, length):
+    """
+    Draws a n-sided polygon of given length. t is a Turtle.
+    """
     angle = 360.0 / sides
     for i in range(sides):
         fd(t, length)

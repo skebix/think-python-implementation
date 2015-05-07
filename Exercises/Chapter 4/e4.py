@@ -19,6 +19,9 @@ turtle = Turtle()
 turtle.delay = 0.01
 
 def circle(t, r):
+    """
+    Draws a circle with the given radius. t is a Turtle. r is in degrees
+    """
     circumference = 2 * pi * r
     sides = 80
     length = circumference / sides
