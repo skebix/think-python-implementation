@@ -14,7 +14,7 @@ write a one-line version of is_palindrome from Exercise 6.6.
 
 def is_palindrome(s):
     """Returns True if s is palindrome, False otherwise."""
-    return True if s == s[::-1] else False
+    return s == s[::-1]
 
 print is_palindrome('redivider')
 print is_palindrome('wololo')
