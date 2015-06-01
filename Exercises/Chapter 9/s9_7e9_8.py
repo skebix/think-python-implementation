@@ -16,3 +16,15 @@ the middle 4 out of 6 numbers were palindromic. And you ready for this? One mile
 Write a Python program that tests all the six-digit numbers and prints any numbers that satisfy these requirements.
 '''
 
+def is_palindrome(i, start, length):
+    s = str(i)[start : start + length]
+    return s[::-1] == s
+
+def has_properties(i):
+    return is_palindrome(i, 2, 4) and is_palindrome(i + 1, 1, 5) and is_palindrome(i + 2, 1, 4) and is_palindrome(i + 3, 0, 6)
+
+def puzzler():
+    for i in range(100000, 999997):
+        if has_properties(i): print i
+
+puzzler()
