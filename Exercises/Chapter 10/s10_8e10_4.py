@@ -6,9 +6,6 @@ elements. So middle([1,2,3,4]) should return [2,3].
 '''
 
 def middle(l):
-    if len(l) <= 2: return []
-    del l[0]
-    del l[len(l) - 1]
-    return l
+    return l[1 : -1]
 
 print middle([1, 2, 3, 4, 5])
