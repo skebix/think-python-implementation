@@ -19,6 +19,8 @@ list, if it's there, or None if it's not.
 Or you could read the documentation of the bisect module and use that!
 '''
 
+c = 0
+
 def word_list():
     word_list = []
     fin = open('words.txt')
@@ -29,7 +31,9 @@ def word_list():
 def bisect(l, word):
     lo = 0
     hi = len(l) - 1
+    global c
     while lo <= hi:
+        c +=1
         mid = lo + (hi - lo) / 2
         if word < l[mid]:
             hi = mid - 1
@@ -41,9 +45,10 @@ def bisect(l, word):
 
 
 l = word_list()
+print len(l)
 word = raw_input('Give me a word! ')
 i = bisect(l, word)
 if i is None:
     print "I don't have that word in my list!"
 else:
-    print word + ' have index number ' + str(i)
+    print word + ' have index number ' + str(i) + '. I guessed it in ' + str(c) + ' steps.'
